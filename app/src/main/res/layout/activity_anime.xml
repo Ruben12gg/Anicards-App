@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimeActivity">
+
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/cover"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/like" />
+
+    <Button
+        android:id="@+id/addDisliked"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/cover"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/add"
+        android:background="@drawable/dislike" />
+
+    <Button
+        android:id="@+id/addSeen"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/cover"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/addDisliked"
+        android:background="@drawable/seen" />
+
+    <Button
+        android:id="@+id/addToWatch"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/cover"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/addSeen"
+        android:background="@drawable/towatch" />
+
+
+    <TextView
+        android:id="@+id/animeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="ANIME TITLE"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animeTitle">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animeTitle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@color/purple" />
+
+            <TextView
+                android:id="@+id/infoBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/general"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infoBar"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/animeTitle02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infoBar"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/tt"
+                android:text="Anime title"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/rd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/animeTitle02"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/release"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/release"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/animeTitle02"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/rd"
+                android:text="Release date"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/release"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/end"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/release"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/ed"
+                android:text="End date"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/el"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/end"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/length"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/end"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/el"
+                android:text="Episode length"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/length"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/rating"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/length"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/rr"
+                android:text="Rating"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/age"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ageRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/ar"
+                android:text="Age rating"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_below="@+id/ageRating"
+                android:layout_marginTop="8dp"
+                android:background="@color/purple" />
+
+            <TextView
+                android:id="@+id/synBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ageRating"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Synopsis"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/synopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/synBar"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Synopsis"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

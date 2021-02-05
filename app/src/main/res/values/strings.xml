@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">AniCards</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Search</string>
+    <string name="title_notifications">Profile</string>
+
+
+    <string name="profile">Home</string>
+    <string name="payments">Search</string>
+    <string name="saved">Profile</string>
+    <string name="userId" />
+
+    //activity anime
+    <string name="general">General</string>
+    <string name="title">Title:</string>
+    <string name="release">Release date:</string>
+    <string name="end">End date:</string>
+    <string name="length">Episode length:</string>
+    <string name="rating">Rating</string>
+    <string name="age">Age rating</string>
+
+    //activity Disliked
+    <string name="disliked">This is your Disliked Collection</string>
+
+    //activity Liked
+    <string name="liked">This is your Liked Collection</string>
+
+    //activity Seen
+    <string name="seen">This is your Seen Collection</string>
+
+    //activity To Watch
+    <string name="toWatch">This is your To Watch Collection</string>
+
+    //activity Profile
+    <string name="animes">Animes</string>
+    <string name="collections">Collections</string>
+    <string name="likedPf">Liked</string>
+    <string name="dislikedPf">Disliked</string>
+    <string name="seenPf">Seen</string>
+    <string name="toWatchPf">To Watch</string>
+
+
+
+
+
+
+    //activity Search
+    <string name="cards">Cards</string>
+    <string name="suggestions">Suggestions</string>
+
+    //activity Login
+    <string name="welcome">Welcome to Anicards</string>
+    <string name="email">E-mail</string>
+    <string name="login">Login</string>
+
+
+
+
+
+
+
+
+</resources>
