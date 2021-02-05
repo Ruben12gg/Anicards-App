@@ -10,6 +10,6 @@ Features:
 - Check your profile data (such as animes added to collections in total, collections...).
 > Consumes data from an API and makes use of Firebase for the database.
 
-It was developed natively for Android, compatible from Android 5.0.0 and beyond. 
+It was developed natively for Android, writen in Java, compatible from Android 5.0.0 and beyond. 
 
 
